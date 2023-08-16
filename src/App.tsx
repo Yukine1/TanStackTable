@@ -52,11 +52,17 @@ function App() {
   if (!data?.results?.length || !data?.results[0]) {
     return <div>Loading...</div>;
   }
+
   const simplifiedData = simplifyMoviesData(data.results);
 
   return (
     <div>
-      <Table data={simplifiedData} columns={titleColumns} />
+      <Table
+        data={simplifiedData}
+        setData={setData}
+        moviesInfo={data}
+        columns={titleColumns}
+      />
     </div>
   );
 }

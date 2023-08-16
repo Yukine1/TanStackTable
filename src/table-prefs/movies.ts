@@ -80,7 +80,7 @@ export const getMovies = async (
   mod: string,
 ): Promise<MoviesResponse | undefined> => {
   try {
-    const response = await fetch(`${url}${mod}`, options);
+    const response = await fetch(`${url}?page=${mod}`, options);
     const data: MoviesResponse = await response.json();
     return data;
   } catch (error) {
