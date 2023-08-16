@@ -1,11 +1,9 @@
-/* Киберпанковская таблица */
-
 div {
-    font-family: 'Orbitron', sans-serif; /* Этот шрифт часто используется для киберпанковских и футуристических дизайнов. */
-    background-color: #121212; /* Темный фон */
-    color: #0ff; /* Яркий неоновый текст */
-    border-radius: 8px; /* Сглаженные углы */
-    overflow: hidden; /* Для обрезания скругленных углов внутри */
+    font-family: 'Orbitron', sans-serif;
+    background-color: #121212;
+    color: #0ff;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 table {
@@ -14,24 +12,22 @@ table {
 }
 
 thead {
-    background-color: #1f1f1f; /* Чуть более светлый фон для заголовка */
+    background-color: #1f1f1f;
 }
 
 th, td {
-    border: 1px solid #0ff; /* Неоновые границы */
+    border: 1px solid #0ff;
     padding: 8px 16px;
     text-align: left;
 }
 
 tr:hover {
-    background-color: #2a2a2a; /* Небольшой эффект при наведении на строку */
+    background-color: #2a2a2a;
 }
 
-/* Неоновый эффект для заголовков */
 th {
     background-image: linear-gradient(45deg, #0ff, #f0f);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-/* Если вам нужны дополнительные стили или какие-то изменения, дайте знать! */
